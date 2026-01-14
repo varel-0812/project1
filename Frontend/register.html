@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Create Account</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="auth-bg">
+
+<form id="registerForm" class="magic-form">
+
+    <h2 class="magic-title-sm">Create Account</h2>
+  
+    <div class="field">
+      <input type="text" id="username" required autocomplete="off">
+      <label>Username</label>
+    </div>
+  
+    <div class="field">
+      <input type="email" id="email" required autocomplete="off">
+      <label>Email</label>
+    </div>
+  
+    <div class="field">
+      <input type="password" id="password" required>
+      <label>Password</label>
+    </div>
+  
+    <div class="field">
+      <input type="password" id="confirmPassword" required>
+      <label>Confirm Password</label>
+    </div>
+  
+    <button type="submit" class="magic-btn w-full">Register</button>
+  
+  </form>
+  
+  <script src="auth.js"></script>
+  
+</body>
+</html>

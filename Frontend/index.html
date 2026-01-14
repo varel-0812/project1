@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Magic Auth</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gradient-to-br from-slate-900 via-indigo-900 to-black min-h-screen flex items-center justify-center text-white">
+
+<div class="magic-card text-center space-y-6">
+  <h1 class="magic-title">Magic Auth</h1>
+  <p class="text-gray-300">Secure • Modern • Interactive</p>
+
+  <div class="flex gap-4 justify-center">
+    <a href="login.html" class="magic-btn">Login</a>
+    <a href="register.html" class="magic-btn-outline">Register</a>
+  </div>
+</div>
+
+<script>
+  if (localStorage.getItem("isLogin") === "true") {
+    window.location.href = "dashboard.html";
+  }
+</script>
+
+</body>
+</html>

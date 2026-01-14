@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Selamat Datang</h1>
+<p id="welcome"></p>
+
+<button onclick="logout()">Logout</button>
+
+<script>
+  if (localStorage.getItem("isLogin") !== "true") {
+    window.location.href = "login.html";
+  }
+
+  const user = JSON.parse(localStorage.getItem("user"));
+  document.getElementById("welcome").innerText =
+    "Halo, " + user.username;
+
+  function logout() {
+    localStorage.removeItem("isLogin");
+    window.location.href = "login.html";
+  }
+</script>
+
+<script>
+    if (localStorage.getItem("isLogin") !== "true") {
+      window.location.href = "login.html";
+    }
+  </script>
+  
+
+</body>
+</html>
